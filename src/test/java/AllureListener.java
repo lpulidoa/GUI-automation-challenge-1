@@ -8,6 +8,7 @@ import org.testng.ITestResult;
 
 public class AllureListener implements ITestListener {
 
+
     private static String getTestMethodName(ITestResult iTestResult) {
         return iTestResult.getMethod().getConstructorOrMethod().getName();
     }

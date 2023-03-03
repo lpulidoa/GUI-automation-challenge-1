@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-GUI_challenge" class="navigator-link">
-              <span class="suite-name border-failed">GUI-challenge</span>
+              <span class="suite-name border-passed">GUI-challenge</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,21 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-GUI_challenge" class="hide-methods failed suite-GUI_challenge"> (hide)</a> <!-- hide-methods failed suite-GUI_challenge -->
-                      <a href="#" panel-name="suite-GUI_challenge" class="show-methods failed suite-GUI_challenge"> (show)</a> <!-- show-methods failed suite-GUI_challenge -->
-                    </span>
-                    <div class="method-list-content failed suite-GUI_challenge">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-GUI_challenge" title="Runner" class="method navigator-link" hash-for-method="successfulSearchTest">successfulSearchTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-GUI_challenge -->
+                    <span class="method-stats">5 methods,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -118,6 +104,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-GUI_challenge" title="Runner" class="method navigator-link" hash-for-method="successfulLoginTest">successfulLoginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-GUI_challenge" title="Runner" class="method navigator-link" hash-for-method="successfulSearchTest">successfulSearchTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -147,29 +138,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-GUI_challenge" class="panel GUI_challenge">
-          <div class="suite-GUI_challenge-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">Runner</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="successfulSearchTest">
-                  </a> <!-- successfulSearchTest -->
-                  <span class="method-name">successfulSearchTest</span>
-                  <div class="stack-trace">java.lang.AssertionError: The movie title is not correct
-Expected: &quot;Fight Club.&quot;
-     but: was &quot;Fight Club&quot;
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-	at Runner.successfulSearchTest(Runner.java:66)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-GUI_challenge-class-failed -->
           <div class="suite-GUI_challenge-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -181,6 +149,13 @@ Expected: &quot;Fight Club.&quot;
                   <a name="successfulLoginTest">
                   </a> <!-- successfulLoginTest -->
                   <span class="method-name">successfulLoginTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="successfulSearchTest">
+                  </a> <!-- successfulSearchTest -->
+                  <span class="method-name">successfulSearchTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -263,30 +238,30 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyMovieGenreFilter')
+data.setCell(0, 1, 'validateActingTimeline')
 data.setCell(0, 2, 'Runner')
-data.setCell(0, 3, 3584);
+data.setCell(0, 3, 4466);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'validateDatesByAscendingOrder')
+data.setCell(1, 1, 'verifyMovieGenreFilter')
 data.setCell(1, 2, 'Runner')
-data.setCell(1, 3, 2208);
+data.setCell(1, 3, 3706);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'successfulLoginTest')
+data.setCell(2, 1, 'validateDatesByAscendingOrder')
 data.setCell(2, 2, 'Runner')
-data.setCell(2, 3, 1676);
+data.setCell(2, 3, 2710);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'validateActingTimeline')
+data.setCell(3, 1, 'successfulLoginTest')
 data.setCell(3, 2, 'Runner')
-data.setCell(3, 3, 1584);
+data.setCell(3, 3, 1883);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'successfulSearchTest')
 data.setCell(4, 2, 'Runner')
-data.setCell(4, 3, 905);
+data.setCell(4, 3, 801);
 window.suiteTableData['GUI_challenge']= { tableData: data, tableDiv: 'times-div-GUI_challenge'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 seconds</span>
+              <span class="suite-total-time">Total running time: 13 seconds</span>
               <div id="times-div-GUI_challenge">
               </div> <!-- times-div-GUI_challenge -->
             </div> <!-- times-div -->
@@ -320,67 +295,69 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">Runner</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">chooseBrowser</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">63 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">successfulLoginTest</span>
-                <span class="method-start">7481 ms</span>
+                <span class="method-start">7426 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">9171 ms</span>
+                <span class="method-start">9323 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">9482 ms</span>
+                <span class="method-start">9539 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">successfulSearchTest</span>
-                <span class="method-start">13591 ms</span>
+                <span class="method-start">13012 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">14731 ms</span>
+                <span class="method-start">13815 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">14939 ms</span>
+                <span class="method-start">13971 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validateActingTimeline</span>
-                <span class="method-start">18556 ms</span>
+                <span class="method-start">17421 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">20142 ms</span>
+                <span class="method-start">21890 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">20342 ms</span>
+                <span class="method-start">22051 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validateDatesByAscendingOrder</span>
-                <span class="method-start">24027 ms</span>
+                <span class="method-start">25600 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">26237 ms</span>
+                <span class="method-start">28312 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">26464 ms</span>
+                <span class="method-start">28519 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyMovieGenreFilter</span>
-                <span class="method-start">30216 ms</span>
+                <span class="method-start">32338 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">33802 ms</span>
+                <span class="method-start">36045 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

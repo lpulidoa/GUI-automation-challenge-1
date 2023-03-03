@@ -1,6 +1,6 @@
 package Factory;
 
-public enum BrowserType {
+public enum DriverType {
     CHROME,
     EDGE
 }

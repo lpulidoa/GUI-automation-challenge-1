@@ -64,7 +64,7 @@ public class Runner extends Hooks {
         SearchResultsPage resultsPage = mainPage.clickSearchButton();
 
         assertThat("The movie title is not correct",
-                resultsPage.getFirstResultTitle(), equalTo(movieName+"."));
+                resultsPage.getFirstResultTitle(), equalTo(movieName));
     }
 
     @Test
