@@ -2,28 +2,28 @@
 <testng-results ignored="1" total="6" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-03T13:54:36 COT" name="GUI-challenge" finished-at="2023-03-03T13:55:12 COT" duration-ms="35816">
+  <suite started-at="2023-03-03T15:43:23 COT" name="GUI-challenge" finished-at="2023-03-03T15:43:57 COT" duration-ms="34326">
     <groups>
     </groups>
-    <test started-at="2023-03-03T13:54:36 COT" name="The Movie Database" finished-at="2023-03-03T13:55:12 COT" duration-ms="35816">
+    <test started-at="2023-03-03T15:43:23 COT" name="The Movie Database" finished-at="2023-03-03T15:43:57 COT" duration-ms="34326">
       <class name="Runner">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Runner@3b569985]" started-at="2023-03-03T13:54:37 COT" name="setUp" finished-at="2023-03-03T13:54:45 COT" duration-ms="8012" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Runner@529cfee5]" started-at="2023-03-03T15:43:23 COT" name="setUp" finished-at="2023-03-03T15:43:31 COT" duration-ms="7464" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="successfulLoginTest()[pri:0, instance:Runner@3b569985]" started-at="2023-03-03T13:54:45 COT" name="successfulLoginTest" finished-at="2023-03-03T13:54:46 COT" duration-ms="1594" status="PASS">
+        <test-method signature="successfulLoginTest()[pri:0, instance:Runner@529cfee5]" started-at="2023-03-03T15:43:31 COT" name="successfulLoginTest" finished-at="2023-03-03T15:43:33 COT" duration-ms="1676" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- successfulLoginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Runner@3b569985]" started-at="2023-03-03T13:54:46 COT" name="tearDown" finished-at="2023-03-03T13:54:47 COT" duration-ms="219" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Runner@529cfee5]" started-at="2023-03-03T15:43:33 COT" name="tearDown" finished-at="2023-03-03T15:43:33 COT" duration-ms="307" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Runner@3b569985]" started-at="2023-03-03T13:54:47 COT" name="setUp" finished-at="2023-03-03T13:54:50 COT" duration-ms="3748" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Runner@529cfee5]" started-at="2023-03-03T15:43:33 COT" name="setUp" finished-at="2023-03-03T15:43:37 COT" duration-ms="4108" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="successfulSearchTest()[pri:0, instance:Runner@3b569985]" started-at="2023-03-03T13:54:50 COT" name="successfulSearchTest" finished-at="2023-03-03T13:54:51 COT" duration-ms="871" status="FAIL">
+        <test-method signature="successfulSearchTest()[pri:0, instance:Runner@529cfee5]" started-at="2023-03-03T15:43:37 COT" name="successfulSearchTest" finished-at="2023-03-03T15:43:38 COT" duration-ms="905" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The movie title is not correct
@@ -74,43 +74,43 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- successfulSearchTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Runner@3b569985]" started-at="2023-03-03T13:54:51 COT" name="tearDown" finished-at="2023-03-03T13:54:52 COT" duration-ms="191" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Runner@529cfee5]" started-at="2023-03-03T15:43:38 COT" name="tearDown" finished-at="2023-03-03T15:43:38 COT" duration-ms="205" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Runner@3b569985]" started-at="2023-03-03T13:54:52 COT" name="setUp" finished-at="2023-03-03T13:54:55 COT" duration-ms="3688" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Runner@529cfee5]" started-at="2023-03-03T15:43:38 COT" name="setUp" finished-at="2023-03-03T15:43:42 COT" duration-ms="3616" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validateActingTimeline()[pri:0, instance:Runner@3b569985]" started-at="2023-03-03T13:54:55 COT" name="validateActingTimeline" finished-at="2023-03-03T13:54:58 COT" duration-ms="2625" status="PASS">
+        <test-method signature="validateActingTimeline()[pri:0, instance:Runner@529cfee5]" started-at="2023-03-03T15:43:42 COT" name="validateActingTimeline" finished-at="2023-03-03T15:43:44 COT" duration-ms="1584" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateActingTimeline -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Runner@3b569985]" started-at="2023-03-03T13:54:58 COT" name="tearDown" finished-at="2023-03-03T13:54:58 COT" duration-ms="181" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Runner@529cfee5]" started-at="2023-03-03T15:43:44 COT" name="tearDown" finished-at="2023-03-03T15:43:44 COT" duration-ms="198" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Runner@3b569985]" started-at="2023-03-03T13:54:58 COT" name="setUp" finished-at="2023-03-03T13:55:02 COT" duration-ms="3556" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Runner@529cfee5]" started-at="2023-03-03T15:43:44 COT" name="setUp" finished-at="2023-03-03T15:43:47 COT" duration-ms="3683" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validateDatesByAscendingOrder()[pri:0, instance:Runner@3b569985]" started-at="2023-03-03T13:55:02 COT" name="validateDatesByAscendingOrder" finished-at="2023-03-03T13:55:05 COT" duration-ms="2835" status="PASS">
+        <test-method signature="validateDatesByAscendingOrder()[pri:0, instance:Runner@529cfee5]" started-at="2023-03-03T15:43:47 COT" name="validateDatesByAscendingOrder" finished-at="2023-03-03T15:43:50 COT" duration-ms="2208" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateDatesByAscendingOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Runner@3b569985]" started-at="2023-03-03T13:55:05 COT" name="tearDown" finished-at="2023-03-03T13:55:05 COT" duration-ms="205" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Runner@529cfee5]" started-at="2023-03-03T15:43:50 COT" name="tearDown" finished-at="2023-03-03T15:43:50 COT" duration-ms="225" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Runner@3b569985]" started-at="2023-03-03T13:55:05 COT" name="setUp" finished-at="2023-03-03T13:55:08 COT" duration-ms="3747" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Runner@529cfee5]" started-at="2023-03-03T15:43:50 COT" name="setUp" finished-at="2023-03-03T15:43:54 COT" duration-ms="3750" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyMovieGenreFilter()[pri:0, instance:Runner@3b569985]" started-at="2023-03-03T13:55:08 COT" name="verifyMovieGenreFilter" finished-at="2023-03-03T13:55:12 COT" duration-ms="3530" status="PASS">
+        <test-method signature="verifyMovieGenreFilter()[pri:0, instance:Runner@529cfee5]" started-at="2023-03-03T15:43:54 COT" name="verifyMovieGenreFilter" finished-at="2023-03-03T15:43:57 COT" duration-ms="3584" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyMovieGenreFilter -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Runner@3b569985]" started-at="2023-03-03T13:55:12 COT" name="tearDown" finished-at="2023-03-03T13:55:12 COT" duration-ms="173" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Runner@529cfee5]" started-at="2023-03-03T15:43:57 COT" name="tearDown" finished-at="2023-03-03T15:43:57 COT" duration-ms="205" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

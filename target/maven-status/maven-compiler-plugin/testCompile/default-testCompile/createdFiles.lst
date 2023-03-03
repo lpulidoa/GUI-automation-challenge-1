@@ -6,6 +6,8 @@ pages\ProfilePage.class
 pages\MainPage.class
 AllureListener.class
 pages\ActorPage.class
+Factory\BrowserType.class
 pages\MoviePage.class
+Factory\WebDriverFactory.class
 Runner.class
 Hooks.class
