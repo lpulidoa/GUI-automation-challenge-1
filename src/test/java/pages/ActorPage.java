@@ -24,7 +24,6 @@ public class ActorPage extends BasePage{
         for (WebElement webElement : creditsBy) {
             credits.add(webElement.getText());
         }
-
         log.info("The acting credits are: " + credits);
         return credits;
     }

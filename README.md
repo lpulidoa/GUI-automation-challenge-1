@@ -1,4 +1,7 @@
 # GUI-automation-challenge-1
-This is my solution to the GUI testing automation challenge for the Endava Internship 2023-1. 
 
-In this project 6 different test cases for https://www.themoviedb.org/ have been automated using Selenium, TestNG and simple reports are generated using Allure.
+Hello there!
+
+This is my solution for the GUI Automation Challenge for the Endava Internship 2023-1.
+The project consists of 6 different automated tests for https://www.themoviedb.org/ that can be run on the browsers Google Chrome and Microsoft Edge. Also, basic Allure reports with screenshots upon test failure are included.
+

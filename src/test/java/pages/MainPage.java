@@ -31,8 +31,8 @@ public class MainPage extends BasePage{
         List<WebElement> trendingMovies = mapToElements(moviesTrendingBy);
         int movieIndex = (int) (Math.random() * (trendingMovies.size()-1));
 
-        log.info("Selected index " + movieIndex);
         log.info("Amount of movies available " + trendingMovies.size());
+        log.info("Selected index " + movieIndex);
 
         clickByJSExecutor(trendingMovies.get(movieIndex));
 
@@ -64,7 +64,6 @@ public class MainPage extends BasePage{
     }
 
     public SearchResultsPage clickSearchButton() {
-
         waitForElementPresence(searchButtonBy);
         mapToElement(searchButtonBy).click();
         return new SearchResultsPage(driver);

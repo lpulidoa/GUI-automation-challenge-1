@@ -1,17 +1,23 @@
+import driverfactory.DriverManager;
+import driverfactory.DriverManagerFactory;
+import driverfactory.DriverType;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.*;
 
 public class Hooks {
 
+    DriverManager driverManager;
     protected static WebDriver driver;
+
+    @BeforeClass
+    public void chooseBrowser(){
+        driverManager = DriverManagerFactory.getManager(DriverType.CHROME);
+    }
 
     @BeforeMethod
     public void setUp(){
 
-        driver = new ChromeDriver();
-
+        driver = driverManager.getDriver();
         driver.manage()
                 .window()
                 .maximize();
@@ -21,7 +27,11 @@ public class Hooks {
 
     @AfterMethod
     public void tearDown(){
-        driver.quit();
+        driverManager.quitDriver();
+    }
+
+    public static synchronized WebDriver getDriver() {
+        return driver;
     }
 
 }
