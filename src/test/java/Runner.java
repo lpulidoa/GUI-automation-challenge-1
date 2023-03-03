@@ -2,6 +2,7 @@ import io.qameta.allure.Feature;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import org.apache.logging.log4j.Logger;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import pages.*;
 
@@ -12,10 +13,8 @@ import static org.apache.logging.log4j.LogManager.getLogger;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 
+
 public class Runner extends Hooks {
-// webdriver factory con dos clases, screenshots, git.ignore(chromedriver, target, .idea)
-// collections are data structures in java : collection [map (hashmap, hashset), lists (arraylist , linkedlists)]
-private static final Logger log = getLogger(MainPage.class.getName());
 
     @Test
     @Feature("Feature1: Login")
@@ -65,7 +64,7 @@ private static final Logger log = getLogger(MainPage.class.getName());
         SearchResultsPage resultsPage = mainPage.clickSearchButton();
 
         assertThat("The movie title is not correct",
-                resultsPage.getFirstResultTitle(), equalTo(movieName));
+                resultsPage.getFirstResultTitle(), equalTo(movieName+"."));
     }
 
     @Test
@@ -99,7 +98,7 @@ private static final Logger log = getLogger(MainPage.class.getName());
 
         assertThat("The movie was not found in acting credits", actorPage.getActingCredits(), hasItem(movieName));
     }
-//(enabled = false)
+
     @Test
     @Feature("Feature5: Organizing")
     public void validateDatesByAscendingOrder() {
@@ -120,3 +119,4 @@ private static final Logger log = getLogger(MainPage.class.getName());
     }
 
 }
+//(enabled = false)

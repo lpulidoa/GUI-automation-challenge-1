@@ -1,0 +1,11 @@
+pages\BasePage.class
+pages\MovieCatalogPage.class
+pages\LoginPage.class
+pages\SearchResultsPage.class
+pages\ProfilePage.class
+pages\MainPage.class
+AllureListener.class
+pages\ActorPage.class
+pages\MoviePage.class
+Runner.class
+Hooks.class
