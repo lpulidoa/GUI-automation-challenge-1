@@ -1,15 +1,10 @@
 import io.qameta.allure.Feature;
-import io.qameta.allure.Severity;
-import io.qameta.allure.SeverityLevel;
-import org.apache.logging.log4j.Logger;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import pages.*;
 
 import java.util.Date;
 import java.util.List;
 
-import static org.apache.logging.log4j.LogManager.getLogger;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 
@@ -18,7 +13,6 @@ public class Runner extends Hooks {
 
     @Test
     @Feature("Feature1: Login")
-    @Severity(SeverityLevel.BLOCKER)
     public void successfulLoginTest(){
         MainPage mainPage = new MainPage(driver);
 
@@ -32,7 +26,7 @@ public class Runner extends Hooks {
                 profilePage.getUsername(), equalTo(System.getenv("USERNAME_MDB")));
     }
 
-    @Test(enabled = false)
+    @Test
     @Feature("Feature1: Login")
     public void unsuccessfulLoginTest(){
         MainPage mainPage = new MainPage(driver);
@@ -111,7 +105,7 @@ public class Runner extends Hooks {
                 .waitForFilterApplication();
 
         List<Date> datesSorted = movieCatalog.getSortedMoviesDate();
-        System.out.println("Sorted movidates: " + datesSorted);
+
         for(int i=1; i<datesSorted.size(); i++){
             assertThat("Date is not in ascending order", datesSorted.get(i) , greaterThan(datesSorted.get(i-1)) );
         }
@@ -119,4 +113,3 @@ public class Runner extends Hooks {
     }
 
 }
-//(enabled = false)

@@ -1,8 +1,7 @@
-import Factory.DriverManager;
-import Factory.DriverManagerFactory;
-import Factory.DriverType;
+import driverfactory.DriverManager;
+import driverfactory.DriverManagerFactory;
+import driverfactory.DriverType;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.*;
 
 public class Hooks {

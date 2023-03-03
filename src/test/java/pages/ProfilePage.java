@@ -12,12 +12,9 @@ public class ProfilePage extends BasePage{
         super(driver);
     }
     private final By usernameTitleBy = By.xpath("//div[@class='content_wrapper flex']//a[contains(text(),'mariana200081')]");
-    private final By statsSubtitleBy = By.xpath("//h2[normalize-space()='Stats']");
 
     public String getUsername(){
+        log.info("Username in profile page checked");
         return mapToElement(usernameTitleBy).getText();
-    }
-    public String getStatsSubtitle(){
-        return mapToElement(statsSubtitleBy).getText();
     }
 }

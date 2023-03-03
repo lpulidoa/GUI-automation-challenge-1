@@ -14,7 +14,6 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
-import java.util.concurrent.TimeUnit;
 
 import static org.apache.logging.log4j.LogManager.getLogger;
 
@@ -24,7 +23,6 @@ public class MovieCatalogPage extends BasePage{
         super(driver);
     }
     private final By filterButtonBy = By.xpath("//div[@data-callback='filterCallback()']");
-    private final By genreFilterTitleBy = By.xpath("//h3[normalize-space()='Genres']");
     private final By actionFilterButtonBy = By.xpath("//ul[@id='with_genres']//li[@data-value='28']");
     private final By filterSearchButtonBy = By.xpath("//a[@class='no_click load_more'][normalize-space()='Search']");
     private final By filteredMoviesBy = By.xpath("//div[@class= 'media_items results']//h2//a[contains(@href,'/movie/')]");

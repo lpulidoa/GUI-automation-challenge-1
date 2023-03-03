@@ -1,6 +1,5 @@
-package Factory;
+package driverfactory;
 
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 
 public class EdgeDriverManager extends DriverManager {
