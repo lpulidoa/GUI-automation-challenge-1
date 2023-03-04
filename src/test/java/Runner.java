@@ -1,6 +1,7 @@
 import io.qameta.allure.Feature;
 import org.testng.annotations.Test;
 import pages.*;
+import pages.components.Filter;
 
 import java.util.Date;
 import java.util.List;
@@ -64,12 +65,16 @@ public class Runner extends Hooks {
     @Test
     @Feature("Feature3: Filter")
     public void verifyMovieGenreFilter() {
+        String genre = "Action";
 
         MainPage mainPage = new MainPage(driver);
 
         MovieCatalogPage movieCatalog = mainPage.clickTopRated()
-                .clickFilterButton()
-                .clickActionGenreFilter()
+                .clickFilterButton();
+
+        Filter genreFilter = new Filter(driver);
+
+        genreFilter.applyMovieGenreFilter(genre)
                 .clickSearchButton()
                 .waitForFilterApplication();
         MoviePage movie = movieCatalog.selectAnyMovie();

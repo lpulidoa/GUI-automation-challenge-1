@@ -23,7 +23,6 @@ public class MovieCatalogPage extends BasePage{
         super(driver);
     }
     private final By filterButtonBy = By.xpath("//div[@data-callback='filterCallback()']");
-    private final By actionFilterButtonBy = By.xpath("//ul[@id='with_genres']//li[@data-value='28']");
     private final By filterSearchButtonBy = By.xpath("//a[@class='no_click load_more'][normalize-space()='Search']");
     private final By filteredMoviesBy = By.xpath("//div[@class= 'media_items results']//h2//a[contains(@href,'/movie/')]");
     private final By htmlBy = By.xpath("//html");
@@ -86,13 +85,6 @@ public class MovieCatalogPage extends BasePage{
 
     public MovieCatalogPage clickFilterButton(){
         mapToElement(filterButtonBy).click();
-        return this;
-    }
-
-
-    public MovieCatalogPage clickActionGenreFilter(){
-        waitForElementPresence(actionFilterButtonBy);
-        clickByJSExecutor(mapToElement(actionFilterButtonBy));
         return this;
     }
 
