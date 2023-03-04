@@ -8,7 +8,6 @@ import org.testng.ITestResult;
 
 public class AllureListener implements ITestListener {
 
-    Hooks hookInstance;
 
     private static String getTestMethodName(ITestResult iTestResult) {
         return iTestResult.getMethod().getConstructorOrMethod().getName();
@@ -26,12 +25,12 @@ public class AllureListener implements ITestListener {
 
     @Override
     public void onStart(ITestContext iTestContext) {
-        iTestContext.setAttribute("WebDriver", hookInstance.getDriver());
+        iTestContext.setAttribute("WebDriver", Hooks.getDriver());
     }
 
     @Override
     public void onTestFailure(ITestResult iTestResult) {
-        WebDriver driver = hookInstance.getDriver();
+        WebDriver driver = Hooks.getDriver();
         if (driver != null)
             saveFailureScreenShot(driver);
         saveTextLog(getTestMethodName(iTestResult) + " failed and screenshot taken!");

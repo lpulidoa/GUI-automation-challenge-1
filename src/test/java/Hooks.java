@@ -6,8 +6,8 @@ import org.testng.annotations.*;
 
 public class Hooks {
 
-    DriverManager driverManager;
-    protected WebDriver driver;
+    protected DriverManager driverManager;
+    protected static WebDriver driver;
 
     @BeforeClass
     public void chooseBrowser(){
@@ -30,7 +30,7 @@ public class Hooks {
         driverManager.quitDriver();
     }
 
-    public synchronized WebDriver getDriver() {
+    public static synchronized WebDriver getDriver() {
         return driver;
     }
 
